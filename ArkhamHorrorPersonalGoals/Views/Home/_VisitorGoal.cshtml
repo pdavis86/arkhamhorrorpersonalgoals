@@ -1,0 +1,21 @@
+﻿@model CurrentState
+
+<div class="visitor-state">
+	@if (Model.VisitorName == "You" && Model.AssignedGoals != null && Model.AssignedGoals.Count() > 1)
+	{
+		<div>
+			<h2>Choose a goal:</h2>
+			@foreach (var goal in Model.AssignedGoals)
+			{
+				<div>@goal <a href="#" class="js-chooseGoal" data-id="@goal.Id">Choose this goal</a></div>
+			}
+		</div>
+	}
+	else
+	{
+		<div>
+			<h2>@Model.VisitorName</h2>
+			<div>@Model.DisplayGoal</div>
+		</div>
+	}
+</div>

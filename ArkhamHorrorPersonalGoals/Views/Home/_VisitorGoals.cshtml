@@ -1,0 +1,8 @@
+﻿@model List<CurrentState>
+
+<div>
+	@foreach (var state in Model)
+	{
+		<partial name="_VisitorGoal" model="state" />
+	}
+</div>

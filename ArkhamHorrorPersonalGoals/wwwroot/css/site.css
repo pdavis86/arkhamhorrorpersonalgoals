@@ -1,0 +1,38 @@
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+    font-family: sans-serif;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url('/img/arkham-horror-the-card-game-lcg-artwork.jpg');
+    background-position: top;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+}
+
+.text-right {
+    text-align: right;
+}

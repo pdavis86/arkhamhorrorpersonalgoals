@@ -1,0 +1,26 @@
+﻿@{
+	ViewData["Title"] = "Personal Goals";
+}
+
+<h1>Arkham Horror Personal Goals</h1>
+
+<section>
+	<p>Enter your name to choose a personal goal:</p>
+	<input type="text" name="visitorName" />
+	<button class="js-setVisitorName">Set my name</button>
+</section>
+
+<section>
+	<h2>Selected Goals</h2>
+	<div class="js-goals">
+		@*Dynamically filled using AJAX*@
+		@ArkhamHorrorPersonalGoals.Controllers.HomeController.WaitingForVisitors
+	</div>
+
+</section>
+
+<section class="text-right">
+	<p>When the scenario is over:</p>
+	<button class="js-showGoals">Show all goals</button>
+	<button class="js-reset">Reset all goals</button>
+</section>
